@@ -1,0 +1,23 @@
+<!-- 以下表单使用 GET 请求发送数据到当前的 URL，method 默认位 GET。 -->
+<form>
+    <label>Name:
+      <input name="submitted-name" autocomplete="name">
+    </label>
+    <button>Save</button>
+  </form>
+  
+  <!-- 以下表单使用 POST 请求发送数据到当前的 URL。 -->
+  <form method="post">
+    <label>Name:
+      <input name="submitted-name" autocomplete="name">
+    </label>
+    <button>Save</button>
+  </form>
+  
+  <!-- 表单使用 fieldset, legend, 和 label 标签 -->
+  <form method="post">
+    <fieldset>
+      <legend>Title</legend>
+      <label><input type="radio" name="radio"> Select me</label>
+    </fieldset>
+  </form>
