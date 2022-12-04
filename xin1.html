@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*找到div的儿子p设置文字颜色*/
+        /* 父选择器 后代选择器{}*/
+        div p{
+            color: red;
+        }
+        /*空格隔开的是后代，儿子，孙子，重孙子等*/
+        /*div a {
+            color: red;
+        }*/
+        /* 只想选中儿子a*/
+        /*div的儿子a文字颜色是红色*/
+        div>a {
+            color: red;
+        }
+        /* p div span h1 文字颜色是红色*/
+        /* 选择器1，选择器2 {} */
+        p,div,span,h1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--后代选择器-->
+    <p>这是一个p标签</p>
+    <div>
+        <p>这是div的儿子</p>
+    </div>
+    <!--子代选择器 -->
+    <div>
+        父级
+        <a href="#">这是div里面的a</a>
+        <p>
+            <a href="#">这是div里面的p里面的</a>
+        </p>
+    </div>
+    <!--并集选择器-->
+    <P>pppp</P>
+    <div>div</div>
+    <span>span</span>
+    <h1>h1</h1>
+    <h2>h2</h2>
+</body>
+</html>
